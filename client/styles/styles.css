@@ -233,6 +233,34 @@ li.black-keys {
  }
 
  .notes-area {
-  width: 75%;
+  /*width: 75%;*/
+ }
+}
+
+@media (max-width: 325px) {
+  .scale > li {
+    padding: 83px 6px 19px;
+  }
+
+  li.black-keys {
+    padding: 38px 0px 4px;
+  }
+
+  .scale > li.black-keys:active {
+    padding-top: 45px;
+  }
+
+  .played {
+    font-size: .6em;
+  }
+
+ .sharp {
+   color: white;
+   top: 34%;
+   left: 30%;
+ }
+
+ .notes-area {
+  /*width: 75%;*/
  }
 }
