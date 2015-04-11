@@ -179,3 +179,24 @@ li.ebony {
   top: 55%;
   left: 0;
 }
+
+.notes-area {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.scale > li.temp-active {
+  box-shadow: none;
+  top: 5px;
+  color: #333;
+  transition: all 0.25s ease-in-out;
+}
+
+.scale > li.temp-active-sharp {
+  background: -moz-linear-gradient(#5f6265, #151b19 50%, #171c1a);
+  background: -webkit-linear-gradient(#5f6265, #151b19 50%, #171c1a);
+  background: linear-gradient(#5f6265, #151b19 50%, #171c1a);
+  border-bottom-width: 8px;
+  padding-top: 135px;
+  color: white;
+}
