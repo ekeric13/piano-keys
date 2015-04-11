@@ -218,6 +218,7 @@ li.black-keys {
     padding: 50px 0px 5px;
     width: 22px;
     border-width: 0 3px 6px;
+    margin-left: -11px;
   }
 
   .scale > li.black-keys:active {
@@ -248,6 +249,7 @@ li.black-keys {
     padding: 38px 0px 4px;
     width: 19px;
     border-width: 0 2px 4px;
+    margin-left: -9px;
   }
 
   .scale > li.black-keys:active {
