@@ -1,0 +1,5 @@
+node_modules/
+client/lib/*
+npm-debug.log
+client/app/bundle.js
+client/app/.bundle.js
