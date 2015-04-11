@@ -130,7 +130,7 @@ h1 {
   top: 5px;
   color: #333;
 }
-li.ebony {
+li.black-keys {
   /* build the key shape */
   z-index: 2;
   position: absolute;
@@ -152,10 +152,10 @@ li.ebony {
   background: linear-gradient(#5f6265, #151b19 25%, #171c1a);
   box-shadow: 0 3px 5px #ccc, inset 0px 0px 0px 1px rgba(220, 220, 220, 0.2);
 }
-.scale > li.ebony:hover {
+.scale > li.black-keys:hover {
   color: gainsboro;
 }
-.scale > li.ebony:active {
+.scale > li.black-keys:active {
   background: -moz-linear-gradient(#5f6265, #151b19 50%, #171c1a);
   background: -webkit-linear-gradient(#5f6265, #151b19 50%, #171c1a);
   background: linear-gradient(#5f6265, #151b19 50%, #171c1a);
@@ -183,6 +183,12 @@ li.ebony {
 .notes-area {
   display: inline-block;
   margin: 0 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
+  font-family: 'Lato';
+  border: 1px solid #1565C0;
+  line-height: 1.7;
 }
 
 .scale > li.temp-active {
@@ -199,4 +205,34 @@ li.ebony {
   border-bottom-width: 8px;
   padding-top: 135px;
   color: white;
+}
+
+/*max-width = 475px*/
+
+@media (max-width: 475px) {
+  .scale > li {
+    padding: 110px 8px 25px;
+  }
+
+  li.black-keys {
+    padding: 50px 0px 5px;
+  }
+
+  .scale > li.black-keys:active {
+    padding-top: 60px;
+  }
+
+  .played {
+    font-size: .8em;
+  }
+
+ .sharp {
+   color: white;
+   top: 45%;
+   left: 0;
+ }
+
+ .notes-area {
+  width: 75%;
+ }
 }

@@ -93,28 +93,28 @@ var Piano = React.createClass({
     <div className="piano-layer">
       <ol className="scale">
         <li data-note="c" >C</li>
-        <li data-note="cs" className="ebony">C# D&#9837;</li>
+        <li data-note="cs" className="black-keys">C# D&#9837;</li>
         <li data-note="d">D</li>
-        <li data-note="ds" className="ebony">D# E&#9837;</li>
+        <li data-note="ds" className="black-keys">D# E&#9837;</li>
         <li data-note="e">E</li>
         <li data-note="f">F</li>
-        <li data-note="fs" className="ebony">F# G&#9837;</li>
+        <li data-note="fs" className="black-keys">F# G&#9837;</li>
         <li data-note="g">G</li>
-        <li data-note="gs" className="ebony">G# A&#9837;</li>
+        <li data-note="gs" className="black-keys">G# A&#9837;</li>
         <li data-note="a">A</li>
-        <li data-note="as" className="ebony">A# B&#9837;</li>
+        <li data-note="as" className="black-keys">A# B&#9837;</li>
         <li data-note="b">B</li>
       </ol>
       <div className="notes-area">
         <form className="notes-form">
           <div>
-            <legend>Place notes here separated by commas</legend>
-            <legend>If want to play a sharp put a 's' after the note</legend>
+            <legend>Place notes here separated by commas.</legend>
+            <legend>If want to play a sharp put a 's' after the note.</legend>
             <legend>Example:</legend>
             <code>a,b,cs</code>
           </div>
           <textarea name="notes"></textarea>
-          <input type="submit" name="submit" value="Play"/>
+          <input className="blue darken-3 waves-effect waves-light btn" type="submit" name="submit" value="Play"/>
         </form>
       </div>
     </div>
