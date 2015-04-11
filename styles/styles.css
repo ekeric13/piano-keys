@@ -216,6 +216,8 @@ li.black-keys {
 
   li.black-keys {
     padding: 50px 0px 5px;
+    width: 22px;
+    border-width: 0 3px 6px;
   }
 
   .scale > li.black-keys:active {
@@ -244,6 +246,8 @@ li.black-keys {
 
   li.black-keys {
     padding: 38px 0px 4px;
+    width: 19px;
+    border-width: 0 2px 4px;
   }
 
   .scale > li.black-keys:active {
