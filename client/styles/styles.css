@@ -49,6 +49,103 @@ h1 {
 }
 
 .header {
-
   margin: 50px 0px
+}
+
+.loading:before {
+  content: "Loading";
+  font-size: 2rem;
+  position: absolute;
+  bottom: 100%;
+  left: -100%;
+}
+
+.loading {
+  background: url(../styles/assets/loading.gif) no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 32px;
+  height: 32px;
+  background-color: #CFCFCF;
+  border-radius: 50%;
+}
+
+.pianos-container{
+  margin: 0 auto;
+}
+
+.piano-layer{
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.scale {
+  position: relative;
+  padding: 0;
+  margin: 0 0 10px;
+  display: inline-block;
+  font-size: 0;
+}
+
+.scale > li {
+  font-size: 16px;
+  font-size: 1rem;
+  background: -moz-linear-gradient(top, #c0c1bd, #f0f0f0 10%, #faf0e6);
+  background: -webkit-linear-gradient(top, #c0c1bd, #f0f0f0 10%, #faf0e6);
+  background: linear-gradient(to bottom, #c0c1bd, #f0f0f0 10%, #faf0e6);
+  transition: all 0.1s ease-in-out;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 220px 15px 50px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 5px 5px #aaa;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: transparent;
+}
+.scale > li:hover {
+  color: #C0C1BD;
+}
+.scale > li:active {
+  box-shadow: none;
+  top: 5px;
+  color: #333;
+}
+li.ebony {
+  /* build the key shape */
+  z-index: 2;
+  position: absolute;
+  width: 32px;
+  top: 0px;
+  margin-left: -16px;
+  padding: 130px 0px 10px;
+  /* Typography */
+  text-align: center;
+  font-size: 0.66667rem;
+  color: transparent;
+  border-radius: 0 0 2px 2px;
+  border-width: 0 6px 12px;
+  border-color: #000;
+  border-bottom-color: #424546;
+  background: #171C1A;
+  background: -moz-linear-gradient(#5f6265, #151b19 25%, #171c1a);
+  background: -webkit-linear-gradient(#5f6265, #151b19 25%, #171c1a);
+  background: linear-gradient(#5f6265, #151b19 25%, #171c1a);
+  box-shadow: 0 3px 5px #ccc, inset 0px 0px 0px 1px rgba(220, 220, 220, 0.2);
+}
+.scale > li.ebony:hover {
+  color: gainsboro;
+}
+.scale > li.ebony:active {
+  background: -moz-linear-gradient(#5f6265, #151b19 50%, #171c1a);
+  background: -webkit-linear-gradient(#5f6265, #151b19 50%, #171c1a);
+  background: linear-gradient(#5f6265, #151b19 50%, #171c1a);
+  border-bottom-width: 8px;
+  padding-top: 135px;
+  color: white;
 }

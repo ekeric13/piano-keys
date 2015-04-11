@@ -13,7 +13,7 @@ var PianoView = React.createClass({
     return (
       <div className="piano-container">
         <h2 className="header"> Play some <b>notes</b> </h2>
-
+        <Pianos />
       </div>
     )
   }
