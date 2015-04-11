@@ -13,10 +13,14 @@ var PianoStore = Reflux.createStore({
 
   getAllPianos: function() {
     // var pianos = [{"id": 1, "octave": "1"}, {"id":2, "octave":"2"}];
+    //
     var pianos = [{"id": 1, "octave": "1"}];
     this._pianos = pianos;
     this.trigger();
+
+    // ************************
     // NORMALLY WOULD HAVE AJAX
+    // ************************
     // $.ajax({
     //   type: 'GET',
     //   url: 'url'
@@ -28,6 +32,7 @@ var PianoStore = Reflux.createStore({
     // .fail(function(error) {
     //   console.error(error);
     // });
+    // *************************
   }
 
 });

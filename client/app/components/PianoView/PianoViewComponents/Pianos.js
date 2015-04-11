@@ -4,10 +4,12 @@ var Piano = require("./Piano");
 var PianoStore = require("../../../stores/PianoStore");
 var PianoActions = require("../../../actions/PianoActions");
 
+var PureRenderMixin = require('react/addons').addons.PureRenderMixin;
+
 
 var Pianos = React.createClass({
 
-  mixins: [Reflux.ListenerMixin],
+  mixins: [Reflux.ListenerMixin, PureRenderMixin],
 
   getInitialState: function () {
     return {

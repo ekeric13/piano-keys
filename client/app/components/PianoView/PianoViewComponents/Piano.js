@@ -1,4 +1,6 @@
 var React = require("react");
+var PureRenderMixin = require('react/addons').addons.PureRenderMixin;
+
 
 var noteCounter = {
   c : 0,
@@ -18,6 +20,8 @@ var noteCounter = {
 var Piano = React.createClass({
 
   displayName: 'Piano',
+
+  mixins: [PureRenderMixin],
 
   propTypes: {
     _id: React.PropTypes.number,

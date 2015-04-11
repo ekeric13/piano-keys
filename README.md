@@ -1,5 +1,7 @@
 # piano-keys
 
+![](http://i.imgur.com/SzZdl96.png?1)
+
 ## Requirements
 
 - Node
