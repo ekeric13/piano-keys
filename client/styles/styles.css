@@ -163,3 +163,19 @@ li.ebony {
   padding-top: 135px;
   color: white;
 }
+
+.played {
+  box-shadow: none;
+  top: 5px;
+  color: #333;
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  text-transform: uppercase;
+}
+
+.sharp {
+  color: white;
+  top: 55%;
+  left: 0;
+}
