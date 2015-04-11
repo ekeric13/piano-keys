@@ -49,7 +49,8 @@ h1 {
 }
 
 .header {
-  margin: 50px 0px
+  margin-top: 30px;
+  margin-bottom: 100px
 }
 
 .loading:before {
@@ -72,7 +73,7 @@ h1 {
   border-radius: 50%;
 }
 
-.pianos-container{
+.pianos-container {
   margin: 0 auto;
 }
 
@@ -87,6 +88,19 @@ h1 {
   margin: 0 0 10px;
   display: inline-block;
   font-size: 0;
+}
+
+.scale-key {
+  /*content: "a";*/
+  position: absolute;
+  top: -25px;
+  left: 40%;
+  color: black;
+}
+
+.key-sharp {
+  top: -20px;
+  left: 30%;
 }
 
 .scale > li {

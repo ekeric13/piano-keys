@@ -10,8 +10,20 @@ var Piano = React.createClass({
     octave: React.PropTypes.string
   },
 
+  grabPiano: function(){
+    $(".scale").children().each(function(index, el){
+      var innerHtml = $(el).text().split(" ");
+      if (innerHtml[1] === undefined) {
+      $(el).append("<span class='scale-key'>"+innerHtml[0]+"</span>");
+      } else {
+        $(el).append("<span class='scale-key key-sharp'>"+innerHtml[0]+"</span>");
+      }
+    });
+  },
+
   componentDidMount: function() {
     console.log("props",this.props, this.props._id, this.props.octave);
+    this.grabPiano();
   },
 
 
