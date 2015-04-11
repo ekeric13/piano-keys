@@ -15,7 +15,6 @@ var PianoStore = Reflux.createStore({
     // var pianos = [{"id": 1, "octave": "1"}, {"id":2, "octave":"2"}];
     var pianos = [{"id": 1, "octave": "1"}];
     this._pianos = pianos;
-    console.log("in piano store",this._pianos);
     this.trigger();
     // NORMALLY WOULD HAVE AJAX
     // $.ajax({

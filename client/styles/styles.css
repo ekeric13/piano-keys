@@ -191,6 +191,10 @@ li.black-keys {
   line-height: 1.7;
 }
 
+.note-example {
+  font-size: 1.25em;
+ }
+
 .scale > li.temp-active {
   box-shadow: none;
   top: 5px;
@@ -283,4 +287,5 @@ li.black-keys {
  .notes-area {
   font-size: .6em;
  }
+
 }

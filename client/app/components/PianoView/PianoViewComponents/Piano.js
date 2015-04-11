@@ -50,7 +50,7 @@ var Piano = React.createClass({
   playNotes: function(e) {
     e.preventDefault();
     var currentTargetClassName = e.currentTarget.className;
-    var notes = $("." + currentTargetClassName + " textarea").val().replace(/\s+/g,"").split(",");
+    var notes = $("." + currentTargetClassName + " textarea").val().toLowerCase().replace(/\s+/g,"").split(",");
     for (var i = 0; i < notes.length; i++) {
       this.playTimeoutNote(notes, i);
     }
@@ -77,7 +77,6 @@ var Piano = React.createClass({
   },
 
   componentDidMount: function() {
-    console.log("props",this.props, this.props._id, this.props.octave);
     this.grabPiano();
     var self = this;
     $(".scale li").on("click", function(){
@@ -111,7 +110,7 @@ var Piano = React.createClass({
             <legend>Place notes here separated by commas.</legend>
             <legend>If want to play a sharp put a 's' after the note.</legend>
             <legend>Example:</legend>
-            <code>a,b,cs</code>
+            <code className="note-example">a,b,cs</code>
           </div>
           <textarea name="notes"></textarea>
           <input className="blue darken-3 waves-effect waves-light btn" type="submit" name="submit" value="Play"/>

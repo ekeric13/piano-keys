@@ -42,7 +42,6 @@ var Pianos = React.createClass({
     this.state.pianos.forEach(function(piano, index) {
       pianos.push(<Piano key={index} _id={piano.id} octave={piano.octave} />);
     });
-    console.log("render",pianos);
     return (
     <div>
       <div className="pianos-container">
