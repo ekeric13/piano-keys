@@ -243,7 +243,7 @@ li.black-keys {
  }
 
  .notes-area {
-  /*width: 75%;*/
+  font-size: .9em;
  }
 }
 
@@ -281,6 +281,6 @@ li.black-keys {
  }
 
  .notes-area {
-  /*width: 75%;*/
+  font-size: .6em;
  }
 }
