@@ -210,12 +210,22 @@ li.black-keys {
 /*max-width = 475px*/
 
 @media (max-width: 475px) {
+
+  .header {
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 75px
+  }
+
   .scale > li {
     padding: 110px 8px 25px;
   }
 
   li.black-keys {
     padding: 50px 0px 5px;
+    width: 22px;
+    border-width: 0 3px 6px;
+    margin-left: -11px;
   }
 
   .scale > li.black-keys:active {
@@ -233,17 +243,27 @@ li.black-keys {
  }
 
  .notes-area {
-  /*width: 75%;*/
+  font-size: .9em;
  }
 }
 
 @media (max-width: 325px) {
+
+  .header {
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 50px
+  }
+
   .scale > li {
     padding: 83px 6px 19px;
   }
 
   li.black-keys {
     padding: 38px 0px 4px;
+    width: 19px;
+    border-width: 0 2px 4px;
+    margin-left: -9px;
   }
 
   .scale > li.black-keys:active {
@@ -256,11 +276,11 @@ li.black-keys {
 
  .sharp {
    color: white;
-   top: 34%;
-   left: 30%;
+   top: 30%;
+   left: 22%;
  }
 
  .notes-area {
-  /*width: 75%;*/
+  font-size: .6em;
  }
 }
