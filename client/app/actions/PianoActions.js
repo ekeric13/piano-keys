@@ -1,7 +1,9 @@
 var Reflux = require("reflux");
 
 var PianoActions = Reflux.createActions([
-  'getAllPianos'
+  'getAllPianos',
+  'addToQueue',
+  'noteDequeue'
 ]);
 
 module.exports = PianoActions;

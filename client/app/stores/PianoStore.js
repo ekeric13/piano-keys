@@ -7,6 +7,8 @@ var PianoStore = Reflux.createStore({
 
   _pianos: [],
 
+  _noteQueue: [],
+
   getAll: function() {
     return this._pianos;
   },
@@ -33,6 +35,21 @@ var PianoStore = Reflux.createStore({
     //   console.error(error);
     // });
     // *************************
+  },
+
+  addToQueue: function(notes) {
+    this._noteQueue = this._noteQueue.concat(notes);
+    this.trigger();
+  },
+
+  getNoteQueue: function() {
+    return this._noteQueue;
+  },
+
+  noteDequeue: function(callback) {
+    this._noteQueue.shift();
+    this.trigger();
+    callback();
   }
 
 });
